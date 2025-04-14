@@ -1,22 +1,24 @@
 This repository contains my submission for the EDA assignment on optimizing NYC Taxi operations.
 
 The project uses two main datasets:
-1. NYC Yellow Taxi Trip Data of year 2023.
-you can download parquet files for 2023 from the NYC TLC website:  
+
+1. **NYC Yellow Taxi Trip Data (2023)**  
+You can download the `.parquet` files for 2023 from the NYC TLC website:  
 🔗 [NYC TLC Trip Data](https://www.nyc.gov/site/tlc/about/tlc-trip-record-data.page)
 
-- Place all downloaded files inside a folder called trip_records.
+- Place all downloaded files inside a folder called `trip_records`.
 
-2. NYC Taxi Zone Geospatial Data these are shapefiles:
-To map zone IDs pickup and dropoff ids to real locations, I used the Taxi Zones shapefile.  
-Download it from:  
-🔗 [NYC Taxi Zones Shapefile (ZIP)](https://www1.nyc.gov/assets/tlc/downloads/pdf/taxi_zones.zip)
+2. **NYC Taxi Zone Geospatial Data (Shapefiles)**  
+To map pickup and drop-off zone IDs to real locations, I used the official Taxi Zones shapefile.  
+This can be downloaded from the same link shared above — look for the section titled **"Taxi Zone Maps and Lookup Tables"**  
+and click on the file **"Taxi Zone Shapefile (Parquet)"**.  
+It downloads as a `.zip` shapefile.
 
-- Unzip the contents into a folder named taxi_zones
+- Unzip the contents into a folder named `taxi_zones`
 - The shapefile contains columns like:
   - `LocationID`: zone ID
   - `zone`: zone name
   - `borough`: borough name
   - `geometry`: spatial polygon used for plotting
 
-Just make sure your code loads from taxi_zones/taxi_zones.shp if you are using GeoPandas.
+Make sure your code loads from `taxi_zones/taxi_zones.shp` if you're using GeoPandas.
