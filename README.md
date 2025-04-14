@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/507a10d8-b4af-43a8-84b0-49ff4965b900)This repository contains my submission for the EDA assignment on optimizing NYC Taxi operations.
+This repository contains my submission for the EDA assignment on optimizing NYC Taxi operations.
 
 The project uses two main datasets:
 1. NYC Yellow Taxi Trip Data of year 2023.
